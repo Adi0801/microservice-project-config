@@ -1,2 +1,12 @@
-
-    
+# Default eureka client configuration for all the services
+eureka:
+  instance:
+  # Prefer IP address over hostname when registering with Eureka server. Default is false.
+    prefer-ip-address: true
+  client:
+  # Whether this instance should try to register with Eureka server or not. Default is true.
+  # any serice (for which this configuration is in)  downloads registry and can discover any service : USER SERVICE, HOTELSERVICE,RATINGSERVICE
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

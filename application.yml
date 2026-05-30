@@ -1,6 +1,3 @@
-spring:  
-  application:
-    name: Config-Default
 
 # Default eureka client configuration for all the services
 eureka:
